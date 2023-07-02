@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: green;
+    cursor: pointer;
+}
+
+.green {
+    background-color: red;
+}
