@@ -1,12 +1,15 @@
 
-const blocks = document.querySelectorAll('.block');
 
-blocks.forEach(function(block) {
-    block.addEventListener('click', function(event) {
+const container = document.querySelector('.container');
+
+container.addEventListener('click', function(event) {
+     const clickElem = event.target;
+
+    if (clickElem.classList.contains('block')) {
         if (document.querySelector('.green')) {
             document.querySelector('.green').classList.remove('green');
         }
 
-        event.target.classList.add('green');
-    });
+        clickElem.classList.add('green');
+    }
 });
